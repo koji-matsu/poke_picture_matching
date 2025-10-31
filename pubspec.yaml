@@ -1,0 +1,87 @@
+name: app
+description: "ポケモン絵合わせアプリ"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+  flutter: ^3.35.6
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  # https://pub.dev/packages/intl
+  intl: ^0.20.2
+
+  # https://pub.dev/packages/flutter_svg
+  flutter_svg: ^2.2.1
+
+  # https://pub.dev/packages/go_router
+  go_router: ^16.3.0
+
+  # https://pub.dev/packages/hooks_riverpod
+  hooks_riverpod: ^3.0.3
+  # https://pub.dev/packages/flutter_hooks
+  flutter_hooks: ^0.21.3+1
+  # https://pub.dev/packages/riverpod_annotation
+  riverpod_annotation: ^3.0.3
+
+  # https://pub.dev/packages/freezed_annotation
+  freezed_annotation: ^3.1.0
+  # https://pub.dev/packages/json_annotation
+  json_annotation: ^4.9.0
+
+  # https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.5.3
+
+  # 追加: ネットワーク層
+  dio: ^5.7.0
+  retrofit: ^4.2.1
+  logger: ^2.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # https://pub.dev/packages/freezed
+  freezed: ^3.2.3
+
+  # https://pub.dev/packages/json_serializable
+  json_serializable: ^6.11.1
+
+  # https://pub.dev/packages/build_runner
+  build_runner: ^2.7.1
+  # https://pub.dev/packages/go_router_builder
+  go_router_builder: ^4.1.1
+  # https://pub.dev/packages/riverpod_generator
+  riverpod_generator: ^3.0.3
+  # https://pub.dev/packages/flutter_gen_runner
+  flutter_gen_runner: ^5.12.0
+  # https://pub.dev/packages/retrofit_generator
+  retrofit_generator: ^10.0.0
+
+  # https://pub.dev/packages/mockito
+  mockito: ^5.5.0
+
+  # https://pub.dev/packages/flutter_lints
+  flutter_lints: ^6.0.0
+  # https://pub.dev/packages/custom_lint
+  custom_lint: ^0.8.0
+  # https://pub.dev/packages/riverpod_lint
+  riverpod_lint: ^3.0.3
+  # https://pub.dev/packages/freezed_lint
+  freezed_lint: ^0.0.12
+
+flutter_gen:
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  generate: true
+  # assets:
+  #  - asset/icon/
+  #  - asset/image/
